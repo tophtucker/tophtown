@@ -1,7 +1,6 @@
 ---
 theme: alt
 toc: false
-sidebar: false
 ---
 
 <style>
@@ -28,16 +27,6 @@ sidebar: false
   background-clip: text;
 }
 
-.hero h2 {
-  margin: 0;
-  max-width: 34em;
-  font-size: 20px;
-  font-style: initial;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--theme-foreground-muted);
-}
-
 @media (min-width: 640px) {
   .hero h1 {
     font-size: 90px;
@@ -47,48 +36,5 @@ sidebar: false
 </style>
 
 <div class="hero">
-  <h1 can-move id="welcome">Hi Spencer welcome to Tophtown</h1>
+  <h1>Tophtown</h1>
 </div>
-
-Flipper length: <input id="slider" type=range min=172 max=231 can-play>
-
-```js
-const x = Generators.input(document.querySelector("#slider"));
-```
-
-```js
-const chart = Plot.plot({
-  marks: [
-    Plot.dot(penguins, {x: "body_mass_g", y: "culmen_length_mm", stroke: "species", filter: d => d.flipper_length_mm >= x, tip: true})
-  ]
-});
-chart.setAttribute("can-move", true);
-const selection = view(chart);
-```
-
-<div id="chart-wrapper" can-move>${chart}</div>
-
-```js
-display(selection);
-```
-
-```js
-const slider = document.querySelector("#slider");
-slider.defaultData = { value: 172 };
-slider.onMount = ({setData}) => {
-  slider.addEventListener("input", (_e) => {
-    setData({ value: slider.value });
-  });
-};
-slider.updateElement = ({ element, data }) => {
-  element.value = +data.value;
-  element.dispatchEvent(new Event("input", { bubbles: true }));
-};
-```
-
-```js
-import { playhtml } from "https://unpkg.com/playhtml@latest";
-playhtml.init();
-```
-
-<script src="https://cursor-party.spencerc99.partykit.dev/cursors.js"></script>
