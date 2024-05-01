@@ -1,6 +1,7 @@
 ---
 theme: alt
 toc: false
+sidebar: false
 ---
 
 <style>
@@ -46,7 +47,7 @@ toc: false
 </style>
 
 <div class="hero">
-  <h1 can-move id="welcome">Welcome to Tophtown</h1>
+  <h1 can-move id="welcome">Hi Spencer welcome to Tophtown</h1>
 </div>
 
 Flipper length: <input id="slider" type=range min=172 max=231 can-play>
@@ -56,12 +57,16 @@ const x = Generators.input(document.querySelector("#slider"));
 ```
 
 ```js
-const selection = view(Plot.plot({
+const chart = Plot.plot({
   marks: [
     Plot.dot(penguins, {x: "body_mass_g", y: "culmen_length_mm", stroke: "species", filter: d => d.flipper_length_mm >= x, tip: true})
   ]
-}));
+});
+chart.setAttribute("can-move", true);
+const selection = view(chart);
 ```
+
+<div id="chart-wrapper" can-move>${chart}</div>
 
 ```js
 display(selection);
