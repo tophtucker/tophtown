@@ -39,4 +39,4 @@ toc: false
   <h1>Tophtown</h1>
 </div>
 
-Welcome to my town
+Welcome to my town!
