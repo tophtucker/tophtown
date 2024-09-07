@@ -39,13 +39,13 @@
   resolved "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
 
-"@observablehq/framework@1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmjs.org/@observablehq/framework/-/framework-1.9.0.tgz"
-  integrity sha512-A2RGFvNoh9dZBGw3b5PLrsxM0IA7vTDPRz3BwccnWBMjmYnJiwC/GkCiDoLI3Y2jB3rX0sjFFjlMMCu4Ufk8NA==
+"@observablehq/framework@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@observablehq/framework/-/framework-1.10.0.tgz"
+  integrity sha512-Jpo1TSofyCpFSlqiG6FRNJDSpAqLy/wnZplzpGQ/0cBZJcOx2ibDfyL/yZXf/ougBa3k2xW8Hh+0t2WOW3BaZw==
   dependencies:
     "@clack/prompts" "^0.7.0"
-    "@observablehq/inputs" "^0.10.6"
+    "@observablehq/inputs" "^0.11.0"
     "@observablehq/runtime" "^5.9.4"
     "@rollup/plugin-commonjs" "^25.0.7"
     "@rollup/plugin-json" "^6.1.0"
@@ -83,12 +83,12 @@
     wrap-ansi "^9.0.0"
     ws "^8.14.2"
 
-"@observablehq/inputs@^0.10.6":
-  version "0.10.6"
-  resolved "https://registry.npmjs.org/@observablehq/inputs/-/inputs-0.10.6.tgz"
-  integrity sha512-fOcpJvyBwPqr9I1QdW55J5x36nxRbfyqRQXVT3li9AvMpy6m14WPo5K0m4cPCxr4IlLIDtM/lq6z1GL3ElA14g==
+"@observablehq/inputs@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.npmjs.org/@observablehq/inputs/-/inputs-0.11.0.tgz"
+  integrity sha512-af8H7Ncg+B+5t9MVKA/GiR2oG1nK7P4g36a92jkgIaBSUDLcmta/FDiJKIyjJ3Pc+FNOGkfRcPCRWEgqVl+Q9A==
   dependencies:
-    htl "0.3"
+    htl "^0.3.1"
     isoformat "^0.2.0"
 
 "@observablehq/inspector@^5.0.0":
@@ -614,7 +614,7 @@ highlight.js@^11.8.0:
   resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.9.0.tgz"
   integrity sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==
 
-htl@0.3:
+htl@^0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/htl/-/htl-0.3.1.tgz"
   integrity sha512-1LBtd+XhSc+++jpOOt0lCcEycXs/zTQSupOISnVAUmvGBpV7DH+C2M6hwV7zWYfpTMMg9ch4NO0lHiOTAMHdVA==
