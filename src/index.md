@@ -40,5 +40,3 @@ toc: false
 </div>
 
 Welcome to my town!
-
-<!-- test 2 -->
