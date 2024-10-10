@@ -40,3 +40,15 @@ toc: false
 </div>
 
 Welcome to my town!
+
+<footer>
+Last built ${await FileAttachment("lastBuilt.txt").text()}
+</footer>
+
+<style>
+footer {
+  font-size: small;
+  font-family: var(--sans-serif);
+  color: gray;
+}
+</style>
