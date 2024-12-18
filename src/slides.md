@@ -28,15 +28,16 @@ window.addEventListener("keydown", function(e) {
 ```
 
 <div class="slide">
-    Hello slide 1
+    Change slides with<br/>arrow keys ↑ and ↓
 </div>
 
 <div class="slide">
-    Hello slide 2
+    Looks like you figured out<br/>the down key
 </div>
 
 <div class="slide">
-    Hello slide 3
+    That’s it for now!
+    <small><a href="https://github.com/tophtucker/tophtown/blob/main/src/slides.md">Source</a></small>
 </div>
 
 
@@ -58,8 +59,11 @@ html, body, main {
     font-family: sans-serif;
     padding: 3vw;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 5vw;
 }
 </style>
