@@ -2,6 +2,7 @@
 toc: false
 sidebar: false
 footer: false
+title: Hello, simple slideshow
 ---
 
 ```js
