@@ -40,3 +40,5 @@ toc: false
 </div>
 
 Welcome to my town!
+
+I am the mayor of my town!
